@@ -1,0 +1,6 @@
+# Mantener los últimos 4 dígitos, reemplazar el resto con 'XXX'
+        df.loc[:, column_name] = df[column_name].str[:n] + '*********' + df[column_name].str[-n:] 
+
+es igual a  df[column_name] = df[column_name].str[:n] + '*********' + df[column_name].str[-n:]
+
+para reemplazar valores en columnas pero se recomienda el anterior
